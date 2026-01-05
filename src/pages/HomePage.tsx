@@ -133,7 +133,7 @@ const HomePage: React.FC = () => {
       <footer className="footer">
         <div className="container">
           <p className="footer-text">
-            Built with React, Three.js, and WebXR
+            Built with React, Three.js, and WebXR <a href="https://github.com/MuddusarZulfiqar/AR-Product-Viewer" target="_blank">Github Repo</a>
           </p>
         </div>
       </footer>
