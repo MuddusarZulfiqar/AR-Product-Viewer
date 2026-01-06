@@ -29,9 +29,9 @@ const ModelUpload: React.FC = () => {
       return false;
     }
 
-    // Reduced to 10MB for localStorage compatibility
-    if (file.size > 10 * 1024 * 1024) {
-      setError('File size must be less than 10MB for cross-device compatibility');
+    // Increased to 1GB for larger model support
+    if (file.size > 1024 * 1024 * 1024) {
+      setError('File size must be less than 1GB');
       return false;
     }
 
@@ -144,7 +144,7 @@ const ModelUpload: React.FC = () => {
               <p className="upload-text">
                 <span className="upload-text-primary">Click to upload</span> or drag and drop
               </p>
-              <p className="upload-text-secondary">GLB or GLTF files (max 10MB)</p>
+              <p className="upload-text-secondary">GLB or GLTF files (max 1GB)</p>
             </>
           )}
         </label>
